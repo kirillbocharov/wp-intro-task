@@ -1,0 +1,69 @@
+# Ignore everything in the root except the wp-content directory
+/*
+!wp-content/
+# Ignore everyting in the wp-content directory, except:
+# mu-plugins, plugins, and themes directories
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+!wp-content/w3tc-config/
+# Ignore all mu-plugins, plugins, and themes
+# unless explicitely whitelisted at the end of this file
+wp-content/mu-plugins/*
+wp-content/plugins/*
+wp-content/themes/*
+# Ignore all files starting with . or ~
+.*
+~*
+# Ignore Editor files
+*.sublime-project
+*.sublime-workspace
+# Ignore log files and databases
+*.log
+*.sql
+*.sqlite
+# Ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+# Ignore backup files
+*.bak
+*.idea
+# BEGIN WHITELISTED FILES #
+###########################
+# Track these files if they exist
+!.gitignore
+!README.md
+!composer.json
+!.htaccess
+!is_alive.php
+!.htpasswd
+
+# Track these configuration files
+!wp-config.*.php
+!wp-config.php
+
+# Still want to ignore sample config files
+wp-config.sample.php
+
+# Track required images
+!favicon.ico
+
+# Track these themes
+# !!! Change this to the customized theme used for the site
+!wp-content/themes/illdy/
+
+# Track custom plugins
+
+# Temporarily include all plugins
+!wp-content/plugins/*
+
+# Continue to ignore core plugins
+wp-content/plugins/hello.php
+wp-content/plugins/Akismet/
