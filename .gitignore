@@ -58,6 +58,7 @@ wp-config.sample.php
 # Track these themes
 # !!! Change this to the customized theme used for the site
 !wp-content/themes/illdy/
+!wp-content/themes/wpintro/
 
 # Track custom plugins
 
